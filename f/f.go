@@ -10,7 +10,7 @@ On macOS it uses mdfind(1) which is backed by a cache,
 otherwise it falls back on the uncached find(1)
 found on most standard Unix systems.
 */
-package main // import "sny.no/cmd/f"
+package main // import "sny.no/tools/f"
 
 import (
 	"flag"
