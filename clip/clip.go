@@ -7,6 +7,14 @@ Text can be piped onto the primary clipboard:
 	% clip
 	foo
 
+And from stdin:
+
+	% clip <<EOF
+	> foo
+	> ^D
+	% clip
+	foo
+
 And from file:
 
 	% clip <bar.txt
