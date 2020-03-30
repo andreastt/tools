@@ -11,21 +11,23 @@ And from stdin:
 
 	% clip <<EOF
 	> foo
+	> bar
 	> ^D
 	% clip
 	foo
+	bar
 
 And from file:
 
-	% clip <bar.txt
+	% clip <foo.txt
 	% clip
-	bar
+	foo
 
-Or from plain arguments:
+Arguments are conflated to a simple string:
 
-	% clip baz
+	% clip foo bar
 	% clip
-	baz
+	foo bar
 
 Remaining work to be done:
 
