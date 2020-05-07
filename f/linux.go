@@ -26,7 +26,6 @@ func f(searchdir, file string, findings chan string, done chan struct{}) {
 func find(dir string, file string) (*bufio.Scanner, error) {
 	args := []string{dir, "-iname", file}
 	cmd := exec.Command("find", args...)
-	log.Println(cmd)
 	var out bytes.Buffer
 	cmd.Stdout = &out
 	if err := cmd.Run(); err != nil {
