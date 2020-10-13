@@ -6,10 +6,10 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
 	"os"
-	"io"
 )
 
 const EX_USAGE = 64
